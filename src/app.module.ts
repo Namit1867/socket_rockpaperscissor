@@ -9,6 +9,8 @@ import configuration from './Config/configuration';
 import * as dotenv from 'dotenv';
 // import {} '../development.env'
 // import { config } from 'process';
+import { UserModule } from './models/user/user.module';
+import { SocketModule } from './models/socket/socket.module';
 
 // console.log(process.env.URL)
 @Module({
@@ -26,7 +28,11 @@ import * as dotenv from 'dotenv';
         
         inject: [ConfigService],},
         
-        )
+        ),
+
+    UserModule,
+
+    SocketModule
   ],
   controllers: [AppController],
   providers: [AppService, configss],
