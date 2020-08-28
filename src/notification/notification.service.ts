@@ -2,12 +2,12 @@ import { Injectable } from '@nestjs/common';
 import {InjectMailer,Mailer} from 'nestjs-mailer'
 import { InjectModel } from '@nestjs/mongoose';
 import { Model } from 'mongoose';
-import { user } from 'src/interfaces/user.interface';
+import { user } from 'src/required/interfaces/user.interface';
 import * as randomatic from 'randomatic'
   
 import { v4 as uuid } from 'uuid';
 import { stringify } from 'querystring';
-import { username } from 'src/dto/username.dto';
+import { username } from 'src/required/dto/username.dto';
 
 
 @Injectable()

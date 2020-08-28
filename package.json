@@ -27,16 +27,13 @@
     "@nestjs/core": "^7.0.0",
     "@nestjs/mongoose": "^7.0.2",
     "@nestjs/platform-express": "^7.0.0",
-<<<<<<< HEAD
     "@types/randomatic": "^3.1.0",
     "@types/randomstring": "^1.1.6",
     "class-transformer": "^0.3.1",
     "class-validator": "^0.12.2",
-=======
     "@nestjs/platform-socket.io": "^7.4.2",
     "@nestjs/websockets": "^7.4.2",
     "dotenv": "^8.2.0",
->>>>>>> 85759825453c6fbfca8c51ed187586d78886c9c7
     "mongoose": "^5.10.0",
     "nestjs-mailer": "^1.0.1",
     "nodemailer": "^6.4.11",

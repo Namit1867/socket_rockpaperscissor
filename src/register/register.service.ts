@@ -1,10 +1,10 @@
 import { Injectable, Get } from '@nestjs/common';
 import { InjectModel } from '@nestjs/mongoose';
 import { Model } from 'mongoose';
-import { user } from 'src/interfaces/user.interface';
-import { username } from 'src/dto/username.dto';
+import { user } from 'src/required/interfaces/user.interface';
+import { username } from 'src/required/dto/username.dto';
 import { NotificationService } from 'src/notification/notification.service';
-import { passkey } from 'src/interfaces/passkey.interface';
+import { passkey } from 'src/required/interfaces/passkey.interface';
 
 @Injectable()
 export class RegisterService
