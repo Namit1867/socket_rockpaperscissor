@@ -1,5 +1,5 @@
 import * as mongoose from 'mongoose';
-
+import * as bcrypt from 'bcrypt'
 
 export const user = new mongoose.Schema({
     username:{
@@ -24,9 +24,16 @@ export const user = new mongoose.Schema({
         required:true},
 
     lastupdated:{type:Date},
+
+    client_id:{type:String},
     
+    salt:{type:String},
+
     password:{type:String,
-        required:true}
+        required:true},
+
+
+    
 });
 
 

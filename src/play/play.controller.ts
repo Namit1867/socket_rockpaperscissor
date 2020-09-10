@@ -9,8 +9,8 @@ export class PlayController {
     
 
     @Post('/game')
-    play(@Body(ValidationPipe) playDto:playDto){
+    play(){
          
-        this.playService.play(playDto)
+        this.playService.play("hello")
     }
 }
